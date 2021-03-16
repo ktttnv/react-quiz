@@ -4,7 +4,34 @@ import ActiveQuiz from "../../components/ActiveQuiz/ActiveQuiz";
 
 class Quiz extends Component {
 	state = {
-		quiz: [],
+		quiz: [
+			{
+				question: "Какого цвета небо?",
+				rightAnswerId: 2,
+				answers: [
+					{
+						text: "Чёрный",
+						id: 1,
+					},
+					{
+						text: "Синий",
+						id: 2,
+					},
+					{
+						text: "Красный",
+						id: 3,
+					},
+					{
+						text: "Зелёный",
+						id: 4,
+					},
+				],
+			},
+		],
+	};
+
+	onAnswerClickHandler = (answerId) => {
+		console.log("Answer Id: ", answerId);
 	};
 
 	render() {
@@ -12,7 +39,11 @@ class Quiz extends Component {
 			<div className={classes.Quiz}>
 				<div className={classes.QuizWrapper}>
 					<h1>Quiz</h1>
-					<ActiveQuiz />
+					<ActiveQuiz
+						question={this.state.quiz[0].question}
+						answers={this.state.quiz[0].answers}
+						onAnswerClick={this.onAnswerClickHandler}
+					/>
 				</div>
 			</div>
 		);

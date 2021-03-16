@@ -1,13 +1,15 @@
 .ActiveQuiz {
-	padding: 20px;
-	color: #fff;
-	border: 2px solid #fff;
+	padding: 17px;
+	color: rgb(51, 50, 50);
 	border-radius: 5px;
-	margin: 0 10 px;
 	box-sizing: border-box;
+	background-color: rgb(245, 244, 244);
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 .Question {
 	display: flex;
 	justify-content: space-between;
+	font-size: 1.2em;
 }

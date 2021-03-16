@@ -2,6 +2,7 @@
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
+	font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .Layout main {
